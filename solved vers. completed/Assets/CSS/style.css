@@ -116,7 +116,8 @@ h3 {
 /* header */
 
 #masthead {
-  padding: 15px;
+  /* padding: 15px; */
+  text-align:center;
   position: fixed;
   z-index: 99;
   width: 100%;
@@ -129,7 +130,7 @@ h3 {
 
 #logo {
   float: left;
-  width: 250px;
+  width: 100%;
   height: 90px;
   font-family: Georgia, Times, "Times New Roman", serif;
   font-size: 30px;
@@ -280,28 +281,7 @@ input[type=submit] {
   border: 0 none;
 }
 
-/* For mobile phones: */
-[class*="col-"] {
-  width: 100%;
-}
-
-@media only screen and (min-width: 600px) {
-  /* For tablets: */
-  .col-s-1 {width: 8.33%;}
-  .col-s-2 {width: 16.66%;}
-  .col-s-3 {width: 25%;}
-  .col-s-4 {width: 33.33%;}
-  .col-s-5 {width: 41.66%;}
-  .col-s-6 {width: 50%;}
-  .col-s-7 {width: 58.33%;}
-  .col-s-8 {width: 66.66%;}
-  .col-s-9 {width: 75%;}
-  .col-s-10 {width: 83.33%;}
-  .col-s-11 {width: 91.66%;}
-  .col-s-12 {width: 100%;}
-}
-@media only screen and (min-width: 768px) {
-  /* For desktop: */
+@media only screen and (max-width: 980px) {
   .col-1 {width: 8.33%;}
   .col-2 {width: 16.66%;}
   .col-3 {width: 25%;}
@@ -315,3 +295,44 @@ input[type=submit] {
   .col-11 {width: 91.66%;}
   .col-12 {width: 100%;}
 }
+@media only screen and (max-width: 768px) {
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+
+@media only screen and (max-width:640px){
+  [class*="col-"] {
+    width: 100%;
+  }
+  #tDiv {
+    padding:0px;
+  }
+  #tDiv2 {
+    padding:0px;
+  }
+  #tDiv3 {
+    padding:0px;
+  }
+  nav {
+    margin:0px;
+    float:none;
+  }
+  .pBox {
+    align-content: "center";
+    padding:0% 25% 0% 25%;
+  }
+  .work {
+    float:none;
+    margin:auto;
+  }
+  }
