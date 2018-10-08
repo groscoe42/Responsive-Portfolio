@@ -6,33 +6,58 @@ body {
   background: url("../images/concrete_seamless.png");
 }
 
-*  {
-    box-sizing: border-box;
-    margin: 0;
-  }
-  .row::after {
-    content: "";
-    clear: both;
-    display: table;
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 [class*="col-"] {
-    float: left;
-    padding: 15px;
+  float: left;
+  padding: 15px;
 }
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
+/* ===================================================== declaring grid column widths =========================================================================================== */
+.col-1 {
+  width: 8.33%;
+}
+.col-2 {
+  width: 16.66%;
+}
+.col-3 {
+  width: 25%;
+}
+.col-4 {
+  width: 33.33%;
+}
+.col-5 {
+  width: 41.66%;
+}
+.col-6 {
+  width: 50%;
+}
+.col-7 {
+  width: 58.33%;
+}
+.col-8 {
+  width: 66.66%;
+}
+.col-9 {
+  width: 75%;
+}
+.col-10 {
+  width: 83.33%;
+}
+.col-11 {
+  width: 91.66%;
+}
+.col-12 {
+  width: 100%;
+}
 
-  /* sticky footer styling */
+/* sticky footer styling */
 
 /* https://css-tricks.com/snippets/css/sticky-footer/ */
 
@@ -58,7 +83,7 @@ footer,
 /* start hover styling */
 
 #logo:hover,
-input[type=submit]:hover {
+input[type="submit"]:hover {
   background: #5e7f7e;
 }
 
@@ -117,7 +142,7 @@ h3 {
 
 #masthead {
   /* padding: 15px; */
-  text-align:center;
+  text-align: center;
   position: fixed;
   z-index: 99;
   width: 100%;
@@ -175,7 +200,8 @@ footer {
   height: 50px;
 }
 
-h3, h2 {
+h3,
+h2 {
   padding-bottom: 20px;
   margin-bottom: 15px;
   line-height: 22px;
@@ -252,15 +278,15 @@ h3, h2 {
 }
 
 label,
-input[type=text],
-input[type=email],
+input[type="text"],
+input[type="email"],
 textarea {
   display: block;
   width: 100%;
 }
 
-input[type=text],
-input[type=email],
+input[type="text"],
+input[type="email"],
 textarea {
   height: 35px;
   padding: 0 10px;
@@ -272,7 +298,7 @@ textarea {
   height: 200px;
 }
 
-input[type=submit] {
+input[type="submit"] {
   padding: 10px 30px;
   font-size: 18px;
   color: #fff;
@@ -280,59 +306,114 @@ input[type=submit] {
   background: #4aaaa5;
   border: 0 none;
 }
-
+#tDiv,
+#tDiv2,
+#tDiv3 {
+  padding-bottom: 0;
+}
+/* styles for smaller screens */
 @media only screen and (max-width: 980px) {
-  .col-1 {width: 8.33%;}
-  .col-2 {width: 16.66%;}
-  .col-3 {width: 25%;}
-  .col-4 {width: 33.33%;}
-  .col-5 {width: 41.66%;}
-  .col-6 {width: 50%;}
-  .col-7 {width: 58.33%;}
-  .col-8 {width: 66.66%;}
-  .col-9 {width: 75%;}
-  .col-10 {width: 83.33%;}
-  .col-11 {width: 91.66%;}
-  .col-12 {width: 100%;}
+  .col-1 {
+    width: 8.33%;
+  }
+  .col-2 {
+    width: 16.66%;
+  }
+  .col-3 {
+    width: 25%;
+  }
+  .col-4 {
+    width: 33.33%;
+  }
+  .col-5 {
+    width: 41.66%;
+  }
+  .col-6 {
+    width: 50%;
+  }
+  .col-7 {
+    width: 58.33%;
+  }
+  .col-8 {
+    width: 66.66%;
+  }
+  .col-9 {
+    width: 75%;
+  }
+  .col-10 {
+    width: 83.33%;
+  }
+  .col-11 {
+    width: 91.66%;
+  }
+  .col-12 {
+    width: 100%;
+  }
 }
+/* styles for tablets */
 @media only screen and (max-width: 768px) {
-  .col-s-1 {width: 8.33%;}
-  .col-s-2 {width: 16.66%;}
-  .col-s-3 {width: 25%;}
-  .col-s-4 {width: 33.33%;}
-  .col-s-5 {width: 41.66%;}
-  .col-s-6 {width: 50%;}
-  .col-s-7 {width: 58.33%;}
-  .col-s-8 {width: 66.66%;}
-  .col-s-9 {width: 75%;}
-  .col-s-10 {width: 83.33%;}
-  .col-s-11 {width: 91.66%;}
-  .col-s-12 {width: 100%;}
+  .col-s-1 {
+    width: 8.33%;
+  }
+  .col-s-2 {
+    width: 16.66%;
+  }
+  .col-s-3 {
+    width: 25%;
+  }
+  .col-s-4 {
+    width: 33.33%;
+  }
+  .col-s-5 {
+    width: 41.66%;
+  }
+  .col-s-6 {
+    width: 50%;
+  }
+  .col-s-7 {
+    width: 58.33%;
+  }
+  .col-s-8 {
+    width: 66.66%;
+  }
+  .col-s-9 {
+    width: 75%;
+  }
+  .col-s-10 {
+    width: 83.33%;
+  }
+  .col-s-11 {
+    width: 91.66%;
+  }
+  .col-s-12 {
+    width: 100%;
+  }
 }
 
-@media only screen and (max-width:640px){
+/* styles for phones */
+@media only screen and (max-width: 640px) {
   [class*="col-"] {
     width: 100%;
   }
   #tDiv {
-    padding:0px;
+    padding: 0px;
   }
   #tDiv2 {
-    padding:0px;
+    padding: 0px;
   }
   #tDiv3 {
-    padding:0px;
+    padding: 0px;
   }
   nav {
-    margin:0px;
-    float:none;
+    margin: 0px;
+    float: none;
   }
   .pBox {
     align-content: "center";
-    padding:0% 25% 0% 25%;
+    padding: 0% 25% 0% 25%;
   }
   .work {
-    float:none;
-    margin:auto;
+    float: none;
+    margin: auto;
   }
-  }
+}
